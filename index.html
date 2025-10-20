@@ -1,122 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiaomi Smart Camera C201</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xiaomi Smart Camera C201</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<style>
-/* Glassmorphism Navbar */
-.rounded-nav {
-  background: rgba(255, 255, 255, 0.15); /* translucent white */
-  backdrop-filter: blur(20px); /* frosted glass blur */
-  -webkit-backdrop-filter: blur(20px); /* Safari support */
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3); /* subtle border */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
-  padding: 1rem 2rem;
-}
-
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: url('wave-bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
+  <style>
+    .glassmorphism {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      padding: 1rem 2rem;
+    }
 
 
-/* Custom Orange Theme */
-.text-orange {
-  color: #ff6b00;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('wave-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
-.btn-orange {
-  background-color: #ff6b00;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  transition: 0.3s;
-}
+    .text-orange {
+      color: #ff6b00;
+    }
 
-.btn-orange:hover {
-  background-color: #e25a00;
-}
+    .btn-orange {
+      background-color: #ff6b00;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
 
-.fullscreen-video {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-  margin-top: 0px;
-}
+    .btn-orange:hover {
+      background-color: #e25a00;
+    }
 
-.bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: -1;
-}
+    .fullscreen-video {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      margin-top: 0px;
+    }
 
-.lead {
-  font-size: 1.2rem;
-  color: #555;
-}
+    .bg-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
 
-.text-center {
-  text-align: center;
-}
+    .lead {
+      font-size: 1.2rem;
+      color: #555;
+    }
 
-.mt-3 {
-  margin-top: 1rem;
-}
+    .text-center {
+      text-align: center;
+    }
 
+    .mt-3 {
+      margin-top: 1rem;
+    }
 
-/* Overview Section */
-.overview-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
+    .overview-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
 
-.nav-link {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-  margin: 0 10px;
-  transition: 0.3s;
-}
+    .nav-link {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
 
-.nav-link:hover {
-  color: #ff6b00;
-}
+    .nav-link:hover {
+      color: #ff6b00;
+    }
 
-.gallery-img {
-  height: 250px;
-  object-fit: cover;
-  width: 100%;
-}
-
-    </style>
+    .gallery-img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body>
 
   <div class="container p-3 mt-3 shadow-lg fixed-top rounded-nav">
     <div class="row align-items-center">
-      <!-- Left side: Product name -->
       <div class="col-md-6 col-12 text-md-start text-center">
         <div class="h3 fw-bold text-orange m-0">Xiaomi Smart Camera C201</div>
       </div>
 
-      <!-- Right side: Navigation links -->
       <div class="col-md-6 col-12 text-md-end text-center mt-2 mt-md-0 p-3">
         <a href="#overview" class="nav-link d-inline-block mx-2">Overview</a>
         <a href="#specs" class="nav-link d-inline-block mx-2">Specs</a>
@@ -125,140 +118,131 @@ body {
     </div>
   </div>
 
-<div class="fullscreen-video">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="video1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-<h1 class="fw-bold text-center m-4">Clearly. Protect Better.</h1>
-<p class="lead text-center mt-3">Crystal-clear 1080p HD protects every corner of your home</p>
-
-      <!--  Overview section -->
-    <div id="overview" class="container text-center overview-section">
-        <div class="row align-items-center mt-5 pt-5">
-            <div class="col-md-6 p-4">
-                <img src="image1.1.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 p-4">
-                <h1 class="fw-bold">Physical lens shielding, protecting privacy at the source</h1>
-                <p class="lead mt-3">
-                    The camera lens can be hidden upwards into the body for physical shielding, ensuring security and peace of mind.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="overview" class="container text-center overview-section">
-            <div class="row align-items-center mt-5 pt-5">
-            <div class="col-md-6 p-4">
-                <img src="image3.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 p-4">
-                <h1 class="fw-bold">MJA1 security chip, finance-grade data protection</h1>
-                <p class="lead mt-3">
-                    Each chip has a unique key and credential, effectively ensuring data communication and storage security, and providing reassuring finance-grade protection.</p>
-            </div>
-        </div>
-    </div>'
-    '
-    <div id="overview" class="container text-center overview-section">
-            <div class="row align-items-center mt-5 pt-5">
-            <div class="col-md-6 p-4">
-                <img src="image4.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 p-4">
-                <h1 class="fw-bold">Accurate local human detection and motion tracking</h1>
-                <p class="lead mt-3">
-                    Featuring a local AI human detection algorithm, it instantly locks onto and follows any detected movement, sending real-time alerts directly to your phone. Human detection is faster and more precise with no cloud processing required.</p>
-            </div>
-        </div>
-    </div>
-    
-      <div id="overview" class="container text-center overview-section">
-            <div class="row align-items-center mt-5 pt-5">
-            <div class="col-md-6 p-4">
-                <img src="image7.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-6 p-4">
-                <h1 class="fw-bold">Panoramic 360° monitoring for a safer home</h1>
-                <p class="lead mt-3">
-                  The dual-axis pan-tilt-zoom motor allows the lens to rotate smoothly up, down, left and right — fully controllable from your smartphone. Enjoy a wider field of view and comprehensive coverage for effective protection and peace of mind.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Specs Section -->
-
-<div id="specs" class="container overview-section d-flex flex-column align-items-center justify-content-center text-center mt-5 pt-5">
-  <div class="p-4" style="max-width: 700px; width: 100%;">
-    <!-- Camera Image -->
-    <img src="image5.jpg" alt="Xiaomi Smart Camera C201 Specs" class="img-fluid rounded shadow mb-4">
-
-    <!-- Specs Title -->
-    <h1 class="fw-bold text-center">Technical Specifications</h1>
-
-    <!-- Specs Table -->
-    <table class="table table-bordered mt-3 text-start">
-      <tbody>
-        <tr>
-          <th scope="row">Product Name</th>
-          <td>Xiaomi Smart Camera C201</td>
-        </tr>
-        <tr>
-          <th scope="row">Rated Input</th>
-          <td>5V⎓1A</td>
-        </tr>
-        <tr>
-          <th scope="row">Operating Temperature</th>
-          <td>-10°C to 40°C</td>
-        </tr>
-        <tr>
-          <th scope="row">Wireless Connectivity</th>
-          <td>Wi-Fi IEEE 802.11 b/g/n 2.4GHz</td>
-        </tr>
-        <tr>
-          <th scope="row">Compatible With</th>
-          <td>Android 4.4 or iOS 9.0 and above</td>
-        </tr>
-        <tr>
-          <th scope="row">Storage Options</th>
-          <td>MicroSD card (8 GB–256 GB supported) / Cloud storage</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="fullscreen-video">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="video1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
-</div>
+  <h1 class="fw-bold text-center m-4">Clearly. Protect Better.</h1>
+  <p class="lead text-center mt-3">Crystal-clear 1080p HD protects every corner of your home</p>
 
-<!-- Package Contents Section: Fully Centered -->
-<div id="specs" class="container overview-section d-flex flex-column align-items-center justify-content-center text-center mt-5 pt-5">
-  <div class="p-4" style="max-width: 700px; width: 100%;">
-    <!-- Camera Image -->
-    <img src="image6.jpg" alt="Xiaomi Smart Camera C201 Package Contents" class="img-fluid rounded shadow mb-4">
-
-    <!-- Section Title -->
-    <h1 class="fw-bold text-center">Package Contents</h1>
-
-    <!-- Package List -->
-    <ul class="list-group text-start mt-3">
-      <li class="list-group-item">Xiaomi Smart Camera C200 (x1)</li>
-      <li class="list-group-item">Charging Cable (x1)</li>
-      <li class="list-group-item">User Manual</li>
-      <li class="list-group-item">Screws and Base (screw x2, base x1)</li>
-      <li class="list-group-item">Warranty Notice</li>
-      <li class="list-group-item">Mounting Template Sticker</li>
-      <li class="list-group-item">View Setup Guide</li>
-    </ul>
+  <div id="overview" class="container text-center overview-section">
+    <div class="row align-items-center mt-5 pt-5">
+      <div class="col-md-6 p-4">
+        <img src="image1.1.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 p-4">
+        <h1 class="fw-bold">Physical lens shielding, protecting privacy at the source</h1>
+        <p class="lead mt-3">
+          The camera lens can be hidden upwards into the body for physical shielding, ensuring security and peace of
+          mind.</p>
+      </div>
+    </div>
   </div>
-</div>
 
-<!-- Section Header -->
-<div id="image" class="text-center mb-4">
-  <h1 class="fw-bold text-orange">Gallery</h1>
-  <p class="lead text-muted">Explore the Xiaomi Smart Camera C200 from every angle</p>
-</div>
+  <div id="overview" class="container text-center overview-section">
+    <div class="row align-items-center mt-5 pt-5">
+      <div class="col-md-6 p-4">
+        <img src="image3.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 p-4">
+        <h1 class="fw-bold">MJA1 security chip, finance-grade data protection</h1>
+        <p class="lead mt-3">
+          Each chip has a unique key and credential, effectively ensuring data communication and storage security, and
+          providing reassuring finance-grade protection.</p>
+      </div>
+    </div>
+  </div>'
+  '
+  <div id="overview" class="container text-center overview-section">
+    <div class="row align-items-center mt-5 pt-5">
+      <div class="col-md-6 p-4">
+        <img src="image4.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 p-4">
+        <h1 class="fw-bold">Accurate local human detection and motion tracking</h1>
+        <p class="lead mt-3">
+          Featuring a local AI human detection algorithm, it instantly locks onto and follows any detected movement,
+          sending real-time alerts directly to your phone. Human detection is faster and more precise with no cloud
+          processing required.</p>
+      </div>
+    </div>
+  </div>
 
+  <div id="overview" class="container text-center overview-section">
+    <div class="row align-items-center mt-5 pt-5">
+      <div class="col-md-6 p-4">
+        <img src="image7.jpg" alt="Xiaomi Smart Camera C201" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 p-4">
+        <h1 class="fw-bold">Panoramic 360° monitoring for a safer home</h1>
+        <p class="lead mt-3">
+          The dual-axis pan-tilt-zoom motor allows the lens to rotate smoothly up, down, left and right — fully
+          controllable from your smartphone. Enjoy a wider field of view and comprehensive coverage for effective
+          protection and peace of mind.</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Image Grid -->
+  <div id="specs"
+    class="container overview-section d-flex flex-column align-items-center justify-content-center text-center mt-5 pt-5">
+    <div class="p-4" style="max-width: 700px; width: 100%;">
+      <img src="image5.jpg" alt="Xiaomi Smart Camera C201 Specs" class="img-fluid rounded shadow mb-4">
+      <h1 class="fw-bold text-center">Technical Specifications</h1>
+      <table class="table table-bordered mt-3 text-start">
+        <tbody>
+          <tr>
+            <th scope="row">Product Name</th>
+            <td>Xiaomi Smart Camera C201</td>
+          </tr>
+          <tr>
+            <th scope="row">Rated Input</th>
+            <td>5V⎓1A</td>
+          </tr>
+          <tr>
+            <th scope="row">Operating Temperature</th>
+            <td>-10°C to 40°C</td>
+          </tr>
+          <tr>
+            <th scope="row">Wireless Connectivity</th>
+            <td>Wi-Fi IEEE 802.11 b/g/n 2.4GHz</td>
+          </tr>
+          <tr>
+            <th scope="row">Compatible With</th>
+            <td>Android 4.4 or iOS 9.0 and above</td>
+          </tr>
+          <tr>
+            <th scope="row">Storage Options</th>
+            <td>MicroSD card (8 GB–256 GB supported) / Cloud storage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="specs"
+    class="container overview-section d-flex flex-column align-items-center justify-content-center text-center mt-5 pt-5">
+    <div class="p-4" style="max-width: 700px; width: 100%;">
+      <img src="image6.jpg" alt="Xiaomi Smart Camera C201 Package Contents" class="img-fluid rounded shadow mb-4">
+      <h1 class="fw-bold text-center">Package Contents</h1>
+      <ul class="list-group text-start mt-3">
+        <li class="list-group-item">Xiaomi Smart Camera C200 (x1)</li>
+        <li class="list-group-item">Charging Cable (x1)</li>
+        <li class="list-group-item">User Manual</li>
+        <li class="list-group-item">Screws and Base (screw x2, base x1)</li>
+        <li class="list-group-item">Warranty Notice</li>
+        <li class="list-group-item">Mounting Template Sticker</li>
+        <li class="list-group-item">View Setup Guide</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="image" class="text-center mb-4">
+    <h1 class="fw-bold text-orange">Gallery</h1>
+    <p class="lead text-muted">Explore the Xiaomi Smart Camera C200 from every angle</p>
+  </div>
+
   <div class="row g-4 justify-content-center">
     <div class="col-md-4 col-sm-6">
       <img src="image8.jpg" alt="Camera in Room" class="img-fluid rounded shadow gallery-img">
@@ -273,13 +257,14 @@ body {
       <img src="image14.jpg" alt="Lens Close-Up" class="img-fluid rounded shadow gallery-img">
     </div>
     <div class="col-md-4 col-sm-6">
-      <img src="image12.jpg" alt="Camera 360 View" class="img-fluid rounded shadow gallery-img" >
+      <img src="image12.jpg" alt="Camera 360 View" class="img-fluid rounded shadow gallery-img">
     </div>
   </div>
-</div>
+  </div>
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>	
+
+</html>
